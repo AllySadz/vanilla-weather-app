@@ -3,7 +3,7 @@ a {
 }
 h1 {
   color: rgb(135, 135, 135);
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 400;
   line-height: 28px;
   margin-bottom: 0;
@@ -20,13 +20,21 @@ li {
   margin: 0;
   padding: 0;
 }
-.outer-container {
+.github-link {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+}
+.weather-app {
   font-family: "Montserrat", sans-serif;
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
+  position: relative;
 }
 .row {
   align-items: center;
@@ -39,4 +47,27 @@ li {
   white-space: nowrap;
   flex: 0 0 50%;
   max-width: 50%;
+}
+.overview {
+  margin-bottom: 20px;
+}
+.weather-temperature {
+  display: flex;
+}
+.weather-temperature img {
+  margin-right: 10px;
+  height: 64px;
+  width: 64px;
+}
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+.weather-temperature span {
+  position: relative;
+  font-size: 16px;
+  top: -32px;
+  left: -15px;
 }
