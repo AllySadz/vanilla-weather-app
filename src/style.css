@@ -74,3 +74,28 @@ li::first-letter {
   top: -32px;
   left: -5px;
 }
+.search-bar input {
+  border-radius: 3px;
+  border: 1px solid black;
+  width: 100%;
+  height: 25px;
+}
+.search-bar {
+  width: 70%;
+  outline: none;
+}
+.search-bar input:focus {
+  outline: none;
+}
+.submit-button {
+  width: 10%;
+  margin-right: 70px;
+}
+.submit-button input {
+  border-radius: 3px;
+  border: 1px solid rgb(35, 35, 35);
+  height: 25px;
+}
+.search.form {
+  margin-bottom: 20px;
+}
