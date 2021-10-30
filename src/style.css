@@ -45,11 +45,11 @@ li:first-letter {
   justify-content: space-between;
 }
 .coloumn {
-  display: flex;
   flex-wrap: nowrap;
   white-space: nowrap;
   flex: 0 0 50%;
   max-width: 50%;
+  text-align: center;
 }
 .overview {
   margin-bottom: 20px;
@@ -105,4 +105,20 @@ li:first-letter {
 }
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+.weather-forecast {
+  margin-top: 30px;
+}
+.forecast-coloumn {
+  flex: 0 0 20%;
+}
+.weather-forecast-temperature-max {
+  font-size: 16px;
+}
+.weather-forecast-temperature-min {
+  font-size: 14px;
+  opacity: 0.6;
+}
+.weather-forecast-date {
+  opacity: 0.6;
 }
