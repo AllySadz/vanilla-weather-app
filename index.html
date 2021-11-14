@@ -35,13 +35,16 @@
         </form>
         <div class="overview">
           <h1 id="city"></h1>
-          <ul>
-            <li>Last updated <span id="date"></span></li>
+          <small>Last updated <span id="date"></span></small>
+          
+           <div class="row temperature-overview">
+            <div class="coloumn">  
+            <ul>            
             <li id="description"></li>
-          </ul>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span> km/h</li>
+          </ul>   
         </div>
-
-        <div class="row temperature-overview">
           <div class="coloumn">
             <div class="weather-temperature">
               <div id="icon">
@@ -55,12 +58,10 @@
               </div>
             </div>
           </div>
-          <div class="coloumn">
-            <ul>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span> km/h</li>
-            </ul>
-          </div>
+        
+          
+          
+        </div>
         </div>
         <div class="weather-forecast" id="forecast"></div>
       </div>
