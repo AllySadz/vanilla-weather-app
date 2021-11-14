@@ -2,11 +2,12 @@ a {
   text-decoration: none;
 }
 h1 {
-  color: rgb(135, 135, 135);
-  font-size: 26px;
+  color: #005f73;
+  font-size: 30px;
   font-weight: 400;
   line-height: 28px;
   margin-bottom: 2px;
+  letter-spacing: 5px;
 }
 ul {
   margin: 0;
@@ -14,15 +15,21 @@ ul {
 }
 li {
   list-style: none;
-  color: rgb(135, 135, 135);
+  color: #001219;
   font-size: 15px;
   line-height: 20px;
   margin: 0;
   padding: 0;
+  letter-spacing: 2px;
 }
 li:first-letter {
   text-transform: capitalize;
 }
+.newIconImage svg {
+  height: 35px;
+  margin: 10px;
+}
+
 .github-link {
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -32,12 +39,13 @@ li:first-letter {
 }
 .weather-app {
   font-family: "Montserrat", sans-serif;
-  max-width: 600px;
+  max-width: 560px;
   margin: 30px auto;
   padding: 20px;
-  border: 1px solid #dadde1;
+  border: 2px solid #005f73;
   border-radius: 5px;
   position: relative;
+  border: 2 px solid #005f73;
 }
 .row {
   align-items: center;
@@ -51,6 +59,19 @@ li:first-letter {
   max-width: 50%;
   text-align: center;
 }
+.col-2 {
+  min-width: calc((100% / 5) - 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #005f73; */
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  /* color: white; */
+  border-color: #005f73;
+  border: 2px solid #005f73;
+}
 .overview {
   margin-bottom: 20px;
 }
@@ -63,10 +84,12 @@ li:first-letter {
   width: 64px;
 }
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
+  color: #001219;
   font-size: 64px;
   font-weight: 400;
   line-height: 1;
+  letter-spacing: 1px;
+  margin-left: 10px;
 }
 .weather-temperature span {
   position: relative;
@@ -76,13 +99,16 @@ li:first-letter {
 }
 .search-bar input {
   border-radius: 3px;
-  border: 1px solid #dadde1;
+  border: 2px solid #005f73;
   width: 100%;
   height: 30px;
+  padding-left: 7px;
 }
 .search-bar {
   width: 70%;
   outline: none;
+  /* border: 1px solid #005f73; */
+  border-radius: 2px;
 }
 .search-bar input:focus {
   outline: none;
@@ -93,21 +119,17 @@ li:first-letter {
 }
 .submit-button input {
   border-radius: 3px;
-  border: 1px solid #dadde1;
+  border: 2px solid #005f73;
   height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .search.form {
   margin-bottom: 20px;
 }
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
 .weather-forecast {
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 5px;
 }
 .forecast-coloumn {
   flex: 0 0 20%;
@@ -121,4 +143,9 @@ li:first-letter {
 }
 .weather-forecast-date {
   opacity: 0.6;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#icon svg {
+  height: 100px;
 }
